@@ -7,6 +7,9 @@ gem 'sqlite3', group: [:development, :test]
 #bootstrap gem
 gem 'bootstrap-sass', '3.3.5'
 
+#Font awesome gemfile
+gem 'font-awesome-sass', '4.2.0'
+
 # Use postgresql as the database for production
 group :production do
   gem 'pg'
