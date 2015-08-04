@@ -7,9 +7,19 @@
 // css gradient
 
 body {
-  background: -webkit-linear-gradient(90deg, #FFEEEE 10%, #DDEFBB 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #FFEEEE 10%, #DDEFBB 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #FFEEEE 10%, #DDEFBB 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #FFEEEE 10%, #DDEFBB 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #FFEEEE 10%, #DDEFBB 90%); /* W3C */
+  
+  background: -webkit-linear-gradient(90deg, #73C8A9 10%, #373B44 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #73C8A9 10%, #373B44 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #73C8A9 10%, #373B44 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #73C8A9 10%, #373B44 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #73C8A9 10%, #373B44 90%); /* W3C */
+        
+}
+
+.jumbotron{
+  background: none;
+}
+
+.jumbotron h1, h3{
+  color: #fff;
 }
