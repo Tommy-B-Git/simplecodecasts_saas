@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :contacts
-  get '/about' => 'pages#about'
-  root 'pages#home'
+  get '/about' => 'pages#about' #'pages#about' just means go to # (pages controller)-(about action)
+  root 'pages#home'  # 'pages#home' just means go to # (pages controller)-(home action)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
