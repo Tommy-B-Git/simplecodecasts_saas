@@ -19,6 +19,7 @@ class ContactsController < ApplicationController
       redirect_to new_contact_path
     end  
   end
+  
   private
   def contact_params # private function for security using the Contact.new(contact_params) above 
     params.require(:contact).permit(:name, :email, :comments)
