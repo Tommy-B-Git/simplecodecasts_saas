@@ -31,7 +31,7 @@
   </nav>
   <div class="container">
     <% flash.each do |key, value| %> <!-- looping through flash message code in contacts cotroller -->
-    <%= content_tag :div, value, class: "alert alert-#{key}" %>
+      <%= content_tag :div, value, class: "alert alert-#{key}" %>
     <% end %>
     <%= yield %>
   </div>
