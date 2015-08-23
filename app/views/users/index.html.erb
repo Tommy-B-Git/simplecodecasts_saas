@@ -1,1 +1,3 @@
-LIst all of our users
+<% @users.each do |u| %> <!--loop through EACH @users (set in users_cont) and DO something using -> |u| as temporary var -->
+<%= u.profile %><br>
+<% end %>
