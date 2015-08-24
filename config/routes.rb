@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   resources :users do
     resource :profile
   end
-  devise_for :users
   resources :contacts
   get '/about' => 'pages#about' #'pages#about' just means go to # (pages controller)-(about action)
   root 'pages#home'  # 'pages#home' just means go to # (pages controller)-(home action)
