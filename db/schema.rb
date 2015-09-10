@@ -13,6 +13,8 @@
 
 ActiveRecord::Schema.define(version: 20150819112114) do
 
+  user_profiles
+
   create_table "contacts", force: true do |t|
     t.string   "name"
     t.string   "email"
