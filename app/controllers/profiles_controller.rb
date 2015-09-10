@@ -1,17 +1,10 @@
 class ProfilesController < ApplicationController
-<<<<<<< HEAD
-    def new
-    # form where a user can fill out their own profile.
-    @user = User.find( params[:user_id] )
-    @profile = @user.build_profile
-=======
   before_action :authenticate_user!
   before_action :only_current_user
   def new
     # form where a user can fill out their own profile.
     @user = User.find( params[:user_id] )
     @profile = Profile.new
->>>>>>> development
   end
   def create 
     @user = User.find( params[:user_id] )
@@ -24,10 +17,6 @@ class ProfilesController < ApplicationController
     end
   end
   def edit
-<<<<<<< HEAD
-  @user = User.find( params[:user_id] )
-  @profile = @user.profile
-=======
     @user = User.find( params[:user_id] )
     @profile = @user.profile
   end
@@ -40,17 +29,13 @@ class ProfilesController < ApplicationController
     else
       render action: :edit
     end
->>>>>>> development
   end
   private
     def profile_params
       params.require(:profile).permit(:first_name, :last_name, :job_title, :phone_number, :contact_email, :description)
     end
-<<<<<<< HEAD
-=======
     def only_current_user
       @user = User.find( params[:user_id] )
       redirect_to(root_url) unless @user == current_user
     end
->>>>>>> development
 end
